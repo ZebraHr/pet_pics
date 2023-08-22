@@ -13,7 +13,7 @@ jobs:
       postgres:
         image: postgres:13.10
         env:
-          POSTGRES_USER: django-user
+          POSTGRES_USER: django_user
           POSTGRES_PASSWORD: mysercretpassword
           POSTGRES_DB: django
         ports:
@@ -33,7 +33,7 @@ jobs:
         pip install -r ./backend/requirements.txt 
     - name: Test with flake8 and django tests
       env:
-        POSTGRES_USER: django-user
+        POSTGRES_USER: django_user
         POSTGRES_PASSWORD: mysercretpassword
         POSTGRES_DB: django
         DB_HOST: 127.0.0.1
