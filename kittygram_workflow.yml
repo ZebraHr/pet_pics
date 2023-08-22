@@ -1,9 +1,10 @@
 
 name: Main Kittygram workflow
 
-
-on: push
-
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   tests:
@@ -74,12 +75,10 @@ jobs:
       with:
         node-version: 18
 
-
     - name: Install dependencies
       run: |
         cd frontend/
         npm ci
-
 
     - name: Test frontend
       run: |
