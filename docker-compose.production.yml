@@ -34,7 +34,7 @@ services:
       - backend
       - frontend
     volumes:
-      - static_volume:/staticfiles/
+      - static_volume:/static/
       - media_volume:/var/www/kittygram/media/
     ports:
       - 9000:80
