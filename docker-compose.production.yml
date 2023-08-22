@@ -20,7 +20,7 @@ services:
       - db
     volumes:
       - static_volume:/backend_static
-      - media:/app/media/
+      - media_volume:/app/media/
   frontend:
     image: zebrahr/kittygram_frontend
     env_file: .env
@@ -35,6 +35,6 @@ services:
       - frontend
     volumes:
       - static_volume:/static/
-      - media:/app/media/
+      - media_volume:/app/media/
     ports:
       - 9000:80
