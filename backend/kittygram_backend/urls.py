@@ -4,7 +4,7 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
 
-from cats.views import AchievementViewSet, CatViewSet
+from cats.views import AchievementViewSet, CatViewSet  # isort: skip
 
 router = routers.DefaultRouter()
 router.register(r'cats', CatViewSet)
