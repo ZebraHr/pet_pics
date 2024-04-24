@@ -88,7 +88,4 @@ sudo certbot --nginx
 ### Автор
 Анна Победоносцева
 
-Студент Яндекс Практикума ["Python-разаботчик плюс"](https://practicum.yandex.ru/python-developer-plus/?from=catalog)
-
-GitHub:
-(https://github.com/ZebraHr)
+[GitHub](https://github.com/ZebraHr)
